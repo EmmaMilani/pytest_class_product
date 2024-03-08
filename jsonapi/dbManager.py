@@ -1,6 +1,5 @@
 import mysql.connector
 from mysql.connector import Error
-import pandas as pd
 
 class DBManager:
     def __init__(self, host, port, username, password, dbname):
