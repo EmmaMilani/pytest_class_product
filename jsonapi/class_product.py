@@ -90,7 +90,8 @@ class Product:
             cursor.execute(sql, (product_id,))
             product = cursor.fetchone()
             if product:
-                return Product(id=product[0], nome=product[1], marca=product[2], prezzo=product[3])
+                return Product(id=product[0], nome=product[1], prezzo=product[2], marca=product[3]) #scuola
+                # return Product(id=product[0], nome=product[1], marca=product[2], prezzo=product[3]) #casa
             else:
                 return None
         except Error as e:
